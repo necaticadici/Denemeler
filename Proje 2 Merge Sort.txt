@@ -1,0 +1,17 @@
+Proje 2
+[16,21,11,8,12,22] -> Merge Sort
+
+Yukarıdaki dizinin sort türüne göre aşamalarını yazınız.
+Big-O gösterimini yazınız.
+
+[16,21,11,8,12,22] => Merge sort sıralama algoritmasında diziyi n/2 parçaya bölünür.
+
+İlk Bölünme => [16,21,11] ve [8,12,22] ;
+2. Bölünme  => [16,21],[11] ve [8,12],[12] tek elemanlı bölünmeler kaldığı için tek elemanlı liste ile 2 elemanlı listelerin ilk elemanları kıyaslanıyor.
+ilk taraf için ;[16,21] ve [11] => 11<16 => [11,16,21]
+2. taraf için ; [8,12] ve [22] => 8<22 [8], ikinci eleman için => 12<22 => [8,12,22]
+
+birleştirme işlemi => [11,16,21] ve [8,12,22] her iki listede soldan başlayarak kıyaslayıp listeleme işlemi yapılır.
+[8,11,12,21,22]
+
+Big-O gösterimi için ise liste her seferinde n/2 işlemi uygulanarak ilerlediği için ;O(n log n)
